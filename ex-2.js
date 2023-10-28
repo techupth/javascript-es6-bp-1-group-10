@@ -1,3 +1,5 @@
+// Exercise #2 : Merging Nested Object
+
 let studentProfile = {
   name: "John",
   age: 20,
@@ -13,5 +15,9 @@ let studentScores = {
 };
 
 // Start coding here
+let newStudentProfile = {
+  ...studentProfile, 
+  scores: {...studentProfile.scores, ...studentScores}
+};
 
 console.log(newStudentProfile);

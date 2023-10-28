@@ -1,3 +1,5 @@
+//Exercise #1 : Merging object
+
 let studentProfile = {
   name: "John",
   age: 20,
@@ -11,6 +13,6 @@ let additionalProperties = {
   hobbies: ["Football", "Coding"],
 };
 
-// Start coding here
+let newStudentProfile = {...studentProfile,...additionalProperties};
 
 console.log(newStudentProfile);

@@ -1,3 +1,5 @@
+// Exercise #3: Merging the Arrays
+
 let orders = [
   { orderId: "A001", paymentType: "Cash", totalPrice: 2500 },
   { orderId: "A002", paymentType: "Credit Card", totalPrice: 4000 },
@@ -10,5 +12,6 @@ let additionalOrders = [
 ];
 
 // Start coding here
+let newOrders = [...orders, ...additionalOrders];
 
 console.log(newOrders);

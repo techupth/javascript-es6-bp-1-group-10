@@ -1,3 +1,5 @@
+// Exercise #4: Merging Nested Array
+
 let studentProfile = {
   name: "John",
   age: 20,
@@ -10,5 +12,9 @@ let studentProfile = {
 let additionalHobbies = ["Painting", "Yoga"];
 
 // Start coding here
+let newStudentProfile = {
+  ...studentProfile,
+  hobbies: [...studentProfile.hobbies, ...additionalHobbies]
+};
 
 console.log(newStudentProfile);
